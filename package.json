@@ -6,30 +6,35 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "build-win": "electron-packager . ibax --platform=win32 --arch=x64 --icon=image/favicon.ico --out=./out --asar --app-version=0.0.1",
     "pack": "electron-builder --dir",
     "dist": "electron-builder"
   },
   "build": {
     "appId": "com.azimiao.test",
     "asar": true,
-    "productName": "ibax",
-    "afterPack": "build/afterPack.js",
+    "productName": "hello",
+    "afterPack": "dist/afterPack.js",
     "directories": {
-      "buildResources": "build",
-      "output": "dist"
+      "buildResources": "dist",
+      "output": "build"
     },
     "win": {
-      "icon": "build/icons/icon.ico"
+      "icon": "dist/icons/icon.ico"
     },
+    "publish": [
+      {
+        "provider": "generic",
+        "url": "https://github.com/renleiabc/electron-app"
+      }
+    ],
     "nsis": {
       "oneClick": false,
       "allowElevation": true,
       "allowToChangeInstallationDirectory": true,
-      "installerIcon": "build/icons/icon.ico",
-      "uninstallerIcon": "build/icons/icon.ico",
-      "installerHeader": "./build/icons/icon.ico",
-      "installerHeaderIcon": "./build/icons/icon.ico",
+      "installerIcon": "dist/icons/icon.ico",
+      "uninstallerIcon": "dist/icons/icon.ico",
+      "installerHeader": "dist/icons/icon.ico",
+      "installerHeaderIcon": "dist/icons/icon.ico",
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true
     }
