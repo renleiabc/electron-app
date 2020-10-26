@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "electron:build-win": "electron-builder",
+    "electron:build": "electron-builder"
   },
   "build": {
     "appId": "com.azimiao.test",
