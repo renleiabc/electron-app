@@ -1,7 +1,7 @@
 {
   "name": "electron-app",
-  "version": "1.0.8",
-  "description": "",
+  "version": "1.0.9",
+  "description": "我不是不努力",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -36,7 +36,7 @@
       "provider": "github",
       "repo": "electron-app",
       "owner": "renleiabc",
-      "token": "e5558fc37bfd2627c3dcee3388607a720800a780",
+      "token": "a9d01cf708c44f8d1bbde1fdb91a6f455b323df3",
       "releaseType": "release",
       "publishAutoUpdate": true
     },
