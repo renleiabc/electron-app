@@ -36,7 +36,7 @@
       "provider": "github",
       "repo": "electron-app",
       "owner": "renleiabc",
-      "token": "dad2b63601f47acb4970d63a75c536b4967d49e1",
+      "token": "c105aa146c20129771781cb963f63cb76a31a31b",
       "releaseType": "release",
       "publishAutoUpdate": true
     },
