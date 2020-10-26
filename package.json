@@ -32,14 +32,9 @@
     "mac": {
       "artifactName": "${productName}_setup_${version}.${ext}"
     },
-    "publish": {
-      "provider": "github",
-      "repo": "electron-app",
-      "owner": "renleiabc",
-      "token": "c105aa146c20129771781cb963f63cb76a31a31b",
-      "releaseType": "release",
-      "publishAutoUpdate": true
-    },
+    "publish": [
+      "github"
+    ],
     "nsis": {
       "oneClick": false,
       "allowElevation": true,
