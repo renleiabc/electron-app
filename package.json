@@ -12,14 +12,14 @@
   "build": {
     "appId": "com.azimiao.test",
     "asar": true,
-    "productName": "hello",
+    "productName": "qwe",
     "afterPack": "dist/afterPack.js",
     "directories": {
       "buildResources": "dist",
       "output": "build"
     },
     "win": {
-      "icon": "dist/icons/icon.ico",
+      "icon": "./dist/favicon.ico",
       "target": {
         "target": "nsis",
         "arch": [
@@ -29,23 +29,22 @@
       }
     },
     "mac": {
-      "icon": "dist/icons/icon.icns",
       "artifactName": "${productName}_setup_${version}.${ext}"
     },
-    "publish": [
-      {
-        "provider": "generic",
-        "url": "https://github.com/renleiabc/electron-app"
-      }
-    ],
+    "publish": {
+      "provider": "github",
+      "repo": "electron-app",
+      "owner": "renleiabc",
+      "token": "e5558fc37bfd2627c3dcee3388607a720800a780",
+      "releaseType": "release",
+      "publishAutoUpdate": true
+    },
     "nsis": {
       "oneClick": false,
       "allowElevation": true,
+      "installerIcon": "./dist/favicon.ico",
+      "uninstallerIcon": "./dist/favicon.ico",
       "allowToChangeInstallationDirectory": true,
-      "installerIcon": "dist/icons/icon.ico",
-      "uninstallerIcon": "dist/icons/icon.ico",
-      "installerHeader": "dist/icons/icon.ico",
-      "installerHeaderIcon": "dist/icons/icon.ico",
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true
     }
