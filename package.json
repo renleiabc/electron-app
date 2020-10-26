@@ -1,6 +1,6 @@
 {
   "name": "electron-app",
-  "version": "1.0.9",
+  "version": "1.1.9",
   "description": "我不是不努力",
   "main": "main.js",
   "scripts": {
@@ -36,7 +36,7 @@
       "provider": "github",
       "repo": "electron-app",
       "owner": "renleiabc",
-      "token": "a9d01cf708c44f8d1bbde1fdb91a6f455b323df3",
+      "token": "dad2b63601f47acb4970d63a75c536b4967d49e1",
       "releaseType": "release",
       "publishAutoUpdate": true
     },
